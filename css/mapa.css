@@ -1,0 +1,372 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #efe4d5;
+}
+
+/* Contenedor principal con grid */
+.parent {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* Solo dos columnas ahora */
+  gap: 8px;
+  height: auto; /* Cambiado de 100vh a auto */
+  padding: 10px;
+  box-sizing: border-box;
+  width: 96%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Estilo del mapa */
+#map {
+  width: 95%;
+  height: 700px;
+  border-radius: 5px;
+  border: 2px solid #897358;
+  margin: 0 auto;
+  display: block;
+}
+
+.contenedor-del-mapa {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo de los divs en el grid */
+.div1 {
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  background-color: #e0d5c9; /* Fondo del div1 */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #897358;
+}
+
+.div3 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  background-color: #e0d5c9; /* Fondo del div3 */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #897358; /* Borde del div3 */
+}
+
+/* Estilo de los controles (inputs, selects, botones) */
+.controlsForms {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+  margin: 0 auto;
+  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 0 10px; /* Margen pequeño a los lados */
+}
+
+.controlsForms label {
+  font-size: 16px; /* Tamaño de fuente uniforme */
+  font-weight: bold; /* Peso de la fuente */
+  margin-top: 5px; /* Reducimos el margen superior */
+  margin-bottom: 2px; /* Añadimos un margen inferior pequeño */
+  color: black; /* Color del texto */
+}
+
+.controlsForms input,
+.controlsForms select {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 8px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente uniforme */
+  margin-top: 0; /* Eliminamos el margen superior */
+  margin-bottom: 10px; /* Espaciado inferior */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 2px solid #897358; /* Borde de inputs y selects */
+  background-color: white; /* Fondo de inputs y selects */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho */
+}
+
+.controlsForms input[type="button"] {
+  margin-top: 10px; /* Espaciado superior */
+  background-color: #897358; /* Fondo del botón */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente uniforme */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.controlsForms input[type="button"]:hover {
+  background-color: #705e48; /* Fondo del botón al pasar el cursor */
+}
+
+/* Estilo de la lista de marcadores */
+.icon-container {
+  display: flex;
+  align-items: center; /* Alinea el select y el icono verticalmente */
+  gap: 10px; /* Espacio entre el select y el icono */
+}
+
+.icon-container select {
+  flex: 1; /* Ocupa el espacio disponible */
+}
+
+.iconImage {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.juntoafotos {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.site-footer {
+  background-image: url(/images/roca.jpeg);
+  background-size: cover; /* Ajusta la imagen para cubrir todo el footer */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  position: relative; /* Necesario para el overlay */
+  padding: 20px 0; /* Espaciado interno */
+}
+
+.text-center {
+  color: white;
+}
+
+/* Estilo del contenedor de "Distancia y Tiempos" */
+#distanceInfo {
+  background-color: #e0d5c9; /* Mismo fondo que el contenedor de Location */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: left; /* Alineación del texto a la izquierda */
+  margin-top: 10px; /* Espaciado superior */
+  border: none; /* Eliminamos el borde */
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna */
+  gap: 10px; /* Espacio entre las secciones */
+}
+
+/* Estilo de los inputs dentro de #distanceInfo */
+#distanceInfo input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 14px;
+}
+
+#distanceInfo input[readonly] {
+  background-color: #ffffff;
+  cursor: not-allowed;
+  border: 2px solid #897358;
+}
+
+/* Estilos para los íconos y etiquetas */
+#distanceInfo p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+#distanceInfo i {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.bi-car-front-fill {
+  font-size: 24px;
+  font-size: 24px;
+  vertical-align: middle;
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Estilos para el popup */
+.popup {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #897358;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.popup input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup button {
+  width: 100%;
+  padding: 10px;
+  background-color: #897358;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #705e48;
+}
+
+/* Estilos para los nuevos campos de zona horaria y hora actual */
+#timeZone,
+#currentTime {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Estilo para la sección de tiempos de viaje */
+.travel-section {
+  background-color: transparent; /* Quitamos el fondo blanco */
+  padding: 15px; /* Espaciado interno */
+  margin-bottom: 5px; /* Espaciado inferior */
+}
+
+/* Estilo para los inputs de tiempo de viaje */
+.travel-row input {
+  width: calc(100% - 16px); /* Mismo ancho que los inputs superiores */
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 2px solid #897358;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 14px;
+  box-sizing: border-box; /* Incluye padding y borde en el ancho */
+}
+
+/* Ajuste específico para la sección de viaje */
+.travel-section {
+  width: 100%;
+}
+
+/* Ajuste para las filas de tiempo */
+.travel-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.travel-row p {
+  min-width: 120px;
+  margin-right: 10px;
+}
+
+#toggleRouteBtn {
+  width: calc(100% - 16px);
+  margin: 0 auto 10px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #897358;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+#toggleRouteBtn:hover {
+  background-color: #705e48;
+}
+
+/* Estilo para la sección del botón toggle */
+.route-toggle-section {
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* Estilo para los botones de imágenes */
+.custom-btn {
+  background-color: #897358;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: #705e48;
+  color: white;
+}
+
+/* Estilo para las imágenes */
+.img-fluid.rounded {
+  border: 3px solid #897358;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Espaciado adicional */
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+/* Fondo especial para la sección de mascotas */
+.pets-section {
+  background-color: #4c3c24;
+  position: relative;
+  z-index: 1;
+}
+
+/* Crear un pseudo-elemento para el fondo sin afectar el contenido */
+.pets-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4c3c24;
+  z-index: -1;
+}
+
+/* Asegurar que el contenido mantenga los estilos originales */
+.pets-section .container {
+  background-color: transparent;
+}
+
+/* Ajustar los colores del texto para que sean legibles */
+.pets-section .text-white {
+  color: #fff !important;
+}
+
+.pets-section .text-muted {
+  color: #d1c7b7 !important;
+}
+
+/* Mantener el estilo de los botones */
+.pets-section .custom-btn {
+  background-color: #897358;
+  color: white;
+}
+
+.pets-section .custom-btn:hover {
+  background-color: #a58a66;
+}

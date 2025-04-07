@@ -1,0 +1,369 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Login Section */
+.login-section {
+  padding: 60px 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  background: url("../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.login-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#login-container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(40, 40, 40, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 900px;
+  max-width: 95%;
+  min-height: 550px;
+  margin: 0 auto;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  color: #fff;
+}
+
+/* Form Containers */
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+  left: 0;
+  z-index: 2;
+}
+
+.sign-up {
+  left: 100%;
+  z-index: 1;
+}
+
+#login-container.active .sign-in {
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+#login-container.active .sign-up {
+  transform: translateX(-100%);
+  z-index: 2;
+}
+
+/* Form Styles */
+.custom-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.custom-form h1 {
+  font-size: 2.2rem;
+  color: #dda15e;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.custom-form span {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.custom-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s;
+  color: white;
+}
+
+.custom-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-form input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(221, 161, 94, 0.5);
+}
+
+.btn-login {
+  background-color: #bc6c24;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #dda15e;
+}
+
+.forgot-password {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: #dda15e;
+}
+
+/* Social Icons */
+.social-icons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #bc6c24;
+  color: white;
+  border-color: #bc6c24;
+}
+
+/* Toggle Container */
+.toggle-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  z-index: 3;
+  transition: all 0.6s ease-in-out;
+}
+
+#login-container.active .toggle-container {
+  transform: translateX(-100%);
+}
+
+.toggle {
+  position: relative;
+  height: 100%;
+  width: 200%;
+  left: -100%;
+  background: #bc6c24;
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+
+#login-container.active .toggle {
+  transform: translateX(50%);
+}
+
+.toggle-panel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  text-align: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+  left: 0;
+  transform: translateX(-200%);
+}
+
+.toggle-right {
+  left: 50%;
+}
+
+#login-container.active .toggle-left {
+  transform: translateX(0);
+}
+
+#login-container.active .toggle-right {
+  transform: translateX(200%);
+}
+
+.toggle-panel h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.toggle-panel p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.toggle-panel button.hidden {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.toggle-panel button.hidden:hover {
+  background: white;
+  color: #bc6c24;
+}
+
+/* Footer */
+.site-footer {
+  padding: 10px 0;
+  background-color: #bc6c24;
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.site-footer .container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.site-footer .copyright-text {
+  font-size: 0.8rem;
+  margin-bottom: 3px !important;
+  color: white;
+}
+
+.site-footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.site-footer a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.site-footer i.fa-heart {
+  color: #ff6b6b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #login-container {
+    min-height: auto;
+    height: auto;
+  }
+
+  .form-container,
+  .toggle-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+
+  .sign-up {
+    transform: translateX(100%);
+  }
+
+  #login-container.active .sign-up {
+    transform: translateX(0);
+  }
+
+  #login-container.active .sign-in {
+    transform: translateX(-100%);
+  }
+
+  .toggle-container {
+    display: none;
+  }
+
+  .login-section {
+    padding: 30px 0;
+    min-height: calc(100vh - 50px);
+  }
+
+  .site-footer {
+    padding: 8px 0;
+  }
+
+  .site-footer .copyright-text,
+  .site-footer p {
+    font-size: 0.75rem;
+  }
+}

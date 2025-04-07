@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="/images/tamal.png" />
+    <title>Tamalimeter - Login</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/vegas.min.css" rel="stylesheet" />
+    <link href="css/tooplate-barista.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="reservation-page">
+    <main>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img
+              src="images/tamal.png"
+              class="navbar-brand-image img-fluid"
+              alt="Barista Cafe Template"
+            />
+            Tamalimeter
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="page.html#section_1"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="page.html#section_2"
+                  >About this</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="page.html#section_3"
+                  >Map</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="page.html#section_4"
+                  >Pets</a
+                >
+              </li>
+            </ul>
+
+            <div class="ms-lg-3">
+              <a class="btn custom-btn custom-border-btn" href="login.html">
+                Login | Register
+                <i class="bi-arrow-up-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sección de Login Actualizada -->
+      <section class="login-section">
+        <div class="container" id="login-container">
+          <div class="form-container sign-in">
+            <form class="custom-form" id="login-form" method="post" role="form">
+              <h1>Sign In</h1>
+              <div class="social-icons">
+                <a href="#" class="icon" id="google-login"
+                  ><i class="fab fa-google"></i
+                ></a>
+                <a href="#" class="icon" id="facebook-login"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="icon" id="github-login"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+              <span>or use your email password</span>
+              <input
+                type="email"
+                name="login-email"
+                id="login-email"
+                placeholder="Email"
+                required
+              />
+              <input
+                type="password"
+                name="login-password"
+                id="login-password"
+                placeholder="Password"
+                required
+              />
+              <a href="#" class="forgot-password">Forgot your password?</a>
+              <button type="submit" class="btn-login">Sign In</button>
+            </form>
+          </div>
+
+          <div class="form-container sign-up">
+            <form
+              class="custom-form"
+              id="register-form"
+              method="post"
+              role="form"
+            >
+              <h1>Create Account</h1>
+              <div class="social-icons">
+                <a href="#" class="icon" id="google-register"
+                  ><i class="fab fa-google"></i
+                ></a>
+                <a href="#" class="icon" id="facebook-register"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="icon" id="github-register"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+              <span>or use your email for registration</span>
+              <input
+                type="text"
+                name="register-name"
+                id="register-name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="text"
+                name="register-lastname"
+                id="register-lastname"
+                placeholder="Lastname"
+                required
+              />
+              <input
+                type="email"
+                name="register-email"
+                id="register-email"
+                placeholder="Email"
+                required
+              />
+              <input
+                type="password"
+                name="register-password"
+                id="register-password"
+                placeholder="Password"
+                required
+              />
+              <button type="submit" class="btn-login">Sign Up</button>
+            </form>
+          </div>
+
+          <div class="toggle-container">
+            <div class="toggle">
+              <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>Enter your personal details to use all site features</p>
+                <button class="hidden" id="login">Sign In</button>
+              </div>
+              <div class="toggle-panel toggle-right">
+                <h1>Hello, Friend!</h1>
+                <p>Register with your personal details to join us</p>
+                <button class="hidden" id="register">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="copyright-text mb-1">Copyright © Tamalimeter 2024</p>
+              <p class="mb-0">All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/login.js" type="module"></script>
+  </body>
+</html>

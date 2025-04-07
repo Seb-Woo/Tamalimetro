@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/images/tamal.png" />
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Tamalimeter</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+            
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+        <link href="css/vegas.min.css" rel="stylesheet" />
+
+        <link href="css/tooplate-barista.css" rel="stylesheet" />
+
+        <link href="css/mapa.css" rel="stylesheet" />
+        
+<!--
+
+Tooplate 2137 Barista Cafe
+
+https://www.tooplate.com/view/2137-barista-cafe
+
+Bootstrap 5 HTML CSS Template
+
+-->
+    </head>
+    
+    <body>
+                
+            <main>
+              <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/tamal.png" class="navbar-brand-image img-fluid" alt="Tamalimeter Logo">
+                        Tamalimeter
+                    </a>
+            
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">About this</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Map</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link click-scroll" href="#section_4">Pets</a>
+                          </li>
+                        </ul>
+            
+                        <div class="ms-lg-3 d-flex align-items-center">
+                          <a class="btn custom-btn custom-border-btn" href="login.html" id="login-button">
+                            Login | Register
+                            <i class="bi-arrow-up-right ms-2"></i>
+                        </a>
+                        <a class="btn custom-btn custom-border-btn" id="logout-button" style="display: none;">
+                            <i class="bi bi-box-arrow-right"></i> Logout
+                        </a>
+                        <span id="user-display" class="me-2 text-white" style="display:none;"></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+                <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 col-12 mx-auto">
+                                <em class="small-text">WELCOME TO</em>
+                                
+                                <h1>Tamalimeter</h1>
+
+                                <p class="text-white mb-4 pb-lg-2">
+                                    Your <em>favourite</em> tamale locator.
+                                </p>
+
+                                <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="#section_2">
+                                    About this page
+                                </a>
+
+                                <a class="btn custom-btn smoothscroll me-2 mb-2" href="#section_3"><strong>Check Map</strong></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="hero-slides"></div>
+                </section>
+
+
+                <section class="about-section section-padding" id="section_2">
+                    <div class="section-overlay"></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-12">
+                                <div class="ratio ratio-1x1">
+                                    <video autoplay loop muted class="custom-video" poster="">
+                                        <source src="videos/preparacion-de-tamales.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                
+                            <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
+                                <h2 class="text-white mb-3">Welcome to the Tamalimeter</h2>
+                                <p class="text-white">Let's find where the best tamales are located around us and thus enjoy a good delicacy today, let's also learn about the time it may take us and more!.</p>
+                                <p class="text-white">Discover a world full of flavors and tradition with our app. Here you'll find the best tamales wherever you are, made with ancient recipes and a modern twist.</p>
+                                <p class="text-white">Whether you're looking for classic chicken tamales, red tamales, rajas tamales, or something more adventurous, we're here to guide you in your search for the perfect tamale. Delight your palate with our culinary guide and begin your adventure today!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="menu-section section-padding">
+                    <div class="container">
+                        <div class="row align-items-stretch"> <!-- Cambio clave aquí -->
+                            <!-- Columna izquierda -->
+                            <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex">
+                                <div class="menu-block-wrap w-100">
+                                    <div class="text-center mb-4 pb-lg-2">
+                                        <h4 class="text-white">How does the page work?</h4>
+                                    </div>
+                
+                                    <div class="menu-block">
+                                        <div class="d-flex flex-column">
+                                            <h6 class="text-center mb-4 text-white">This page works based on the user's location and the use of coordinates, the use of custom pins, and other features related to the location of tamale stands.</h6>
+                                        </div>
+                                        <div class="border-top mt-2 pt-2">
+                                            <small class="text-muted">Explore and determine the places as you like.</small>
+                                        </div>
+                                    </div>
+                
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex flex-column">
+                                            <h6 class="text-center mb-4 text-white">You can search through the interactive map to navigate the streets of your own city, or you can even enter the exact coordinates of the location you want to reach.</h6>
+                                        </div>
+                                        <div class="border-top mt-2 pt-2">
+                                            <small class="text-muted">This is more a matter of individual preference.</small>
+                                        </div>
+                                    </div>
+                
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex flex-column">
+                                            <h6 class="text-center mb-4 text-white">This way, you'll also be able to find out other details, such as how long it will take to get from your location to the indicated point, whether you arrive on foot, by bike, motorcycle, or even by car.</h6>
+                                        </div>
+                                        <div class="border-top mt-2 pt-2">
+                                            <small class="text-muted">And even some other features that can help.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Columna derecha -->
+                            <div class="col-lg-6 col-12 d-flex">
+                                <div class="menu-block-wrap w-100">
+                                    <div class="text-center mb-4 pb-lg-2">
+                                        <h4 class="text-white">What is the purpose of this page/app?</h4>
+                                    </div>
+                                    
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex flex-column">
+                                            <h6 class="text-center mb-4 text-white">This page was created to better adapt to learning how to use:</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="text-white mb-2"><i class="bi bi-check-circle-fill me-2 text-warning"></i>APIs</li>
+                                                <li class="text-white mb-2"><i class="bi bi-check-circle-fill me-2 text-warning"></i>Firebase</li>
+                                                <li class="text-white mb-2"><i class="bi bi-check-circle-fill me-2 text-warning"></i>Dialogs</li>
+                                                <li class="text-white mb-2"><i class="bi bi-check-circle-fill me-2 text-warning"></i>Advanced JavaScript Functions</li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-top mt-2 pt-2"></div>
+                                    </div>
+                            
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex flex-column">
+                                            <h6 class="text-center mb-4 text-white">Implemented APIs:</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="text-white mb-2"><i class="bi bi-geo-alt-fill me-2 text-info"></i> Google Maps API</li>
+                                                <li class="text-white mb-2"><i class="bi bi-file-image fa-cat me-2 text-info"></i> The Cat API</li>
+                                                <li class="text-white mb-2"><i class="bi bi-file-image me-2 text-info"></i> Dog API</li>
+                                            </ul>
+                                        
+                                        <p class="text-white mt-4">The interactive map uses the Google Maps API along with Firebase to store favorite locations, and the Weather API to display current conditions.</p>
+                                        <div class="border-top mt-2 pt-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="barista-section section-padding section-bg" id="section_3">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div id="map"></div>
+              
+                          <div class="parent">
+                              <div class="div1">
+                                  <section class="controls">
+                                      <form class="controlsForms">
+                                          <input
+                                              type="button"
+                                              id="buttonaddnewplace"
+                                              value="+ Add new place"
+                                              class="btn btn-primary w-100"
+                                          />
+                                          <label for="locationSelect"><i class="bi bi-bookmark"></i> Location:</label>
+                                          <select
+                                              name="locationSelect"
+                                              id="locationSelect"
+                                              class="form-select mb-2"
+                                          >
+                                              <option value="">- SELECT PLACE -</option>
+                                          </select>
+                              
+                                          <label for="latitude"><i class="bi bi-compass"></i> Latitude:</label>
+                                          <input
+                                              type="text"
+                                              name="latitude"
+                                              id="latitude"
+                                              class="form-control mb-2"
+                                          />
+                              
+                                          <label for="longitude"><i class="bi bi-compass"></i> Longitude:</label>
+                                          <input
+                                              type="text"
+                                              name="longitude"
+                                              id="longitude"
+                                              class="form-control mb-2"
+                                          />
+                              
+                                          <label for="iconSelect"><i class="bi bi-check2-square"></i> Select an Icon:</label>
+                                          <div class="icon-container">
+                                              <select
+                                                  name="iconSelect"
+                                                  id="iconSelect"
+                                                  class="form-select mb-2"
+                                              >
+                                                  <option value="">- SELECT ICON -</option>
+                                              </select>
+                                              <img
+                                                  id="iconImage"
+                                                  src=""
+                                                  alt="Selected Icon"
+                                                  class="iconImage"
+                                              />
+                                          </div>
+                              
+                                          <input
+                                              type="button"
+                                              id="buttonSet"
+                                              value="Move to"
+                                              class="btn btn-primary w-100"
+                                          />
+                                      </form>
+                                  </section>
+                              </div>
+                              <div class="div3">
+                                  <div id="distanceInfo">
+                                      <!-- Sección 1: Distancia y Hora Actual -->
+                                      <div class="distance-section">
+                                          <p><i class="bi bi-geo-alt"></i><strong>Distance:</strong></p>
+                                          <input
+                                              type="text"
+                                              name="distance"
+                                              id="distance"
+                                              class="form-control mb-2"
+                                              readonly
+                                          />
+                              
+                                          <p><i class="bi bi-clock-history"></i><strong>Current Time:</strong></p>
+                                          <input
+                                              type="text"
+                                              name="currentTime"
+                                              id="currentTime"
+                                              class="form-control mb-2"
+                                              readonly
+                                          />
+                                      </div>
+                                  </div>
+                                  <div class="route-toggle-section">
+                                      <button id="toggleRouteBtn" class="btn btn-primary w-100 mb-3">
+                                          <i class="bi bi-eye-fill"></i> Show / Hide Route
+                                      </button>
+                                  </div>
+                              
+                                  <!-- Sección 2: Tiempos de Viaje -->
+                                  <div id="distanceInfo">
+                                      <div class="travel-section">
+                                          <!-- Fila 1: Walking time -->
+                                          <div class="travel-row">
+                                              <i class="bi bi-person-walking"></i>
+                                              <p><strong>Walking time:</strong></p>
+                                              <input
+                                                  type="text"
+                                                  name="walkingTime"
+                                                  id="walkingTime"
+                                                  class="form-control"
+                                                  readonly
+                                              />
+                                          </div>
+                              
+                                          <!-- Fila 2: Bike time -->
+                                          <div class="travel-row">
+                                              <i class="bi bi-bicycle"></i>
+                                              <p><strong>Bike time:</strong></p>
+                                              <input
+                                                  type="text"
+                                                  name="bicyclingTime"
+                                                  id="bicyclingTime"
+                                                  class="form-control"
+                                                  readonly
+                                              />
+                                          </div>
+                              
+                                          <!-- Fila 3: Motorcycle time -->
+                                          <div class="travel-row">
+                                              <i class="bi bi-bicycle"></i>
+                                              <p><strong>Motorbike time:</strong></p>
+                                              <input
+                                                  type="text"
+                                                  name="motorcycleTime"
+                                                  id="motorcycleTime"
+                                                  class="form-control"
+                                                  readonly
+                                              />
+                                          </div>
+                              
+                                          <!-- Fila 4: Drive time -->
+                                          <div class="travel-row">
+                                              <i class="bi bi-car-front-fill"></i>
+                                              <p><strong>Drive time:</strong></p>
+                                              <input
+                                                  type="text"
+                                                  name="drivingTime"
+                                                  id="drivingTime"
+                                                  class="form-control"
+                                                  readonly
+                                              />
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+    <!-- Popup para agregar lugares -->
+    <dialog class="popup" closedby="any">
+        <form>
+          <label for="inpLatitude">Latitude:</label>
+          <input type="text" id="inpLatitude" readonly />
+  
+          <label for="inpLongitude">Longitude:</label>
+          <input type="text" id="inpLongitude" readonly />
+  
+          <label for="placeName">Place Name:</label>
+          <input type="text" id="placeName" required />
+          <small id="warning" style="color: red"></small>
+  
+          <button type="button" id="pupopButton">Save</button>
+        </form>
+      </dialog>
+
+      <section class="menu-section section-padding pets-section" id="section_4">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <!-- Columna izquierda - Dogs -->
+                <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex">
+                    <div class="menu-block-wrap w-100">
+                        <div class="text-center mb-4 pb-lg-2">
+                            <h4 class="text-white">Do you like dogs?</h4>
+                        </div>
+    
+                        <!-- Contenedor de la imagen del perro -->
+                        <div class="text-center mb-3">
+                            <img id="dog-image" src="" alt="Random Dog" class="img-fluid rounded" style="max-height: 300px; width: auto;">
+                        </div>
+    
+                        <!-- Botón para nueva imagen de perro -->
+                        <div class="text-center mb-4">
+                            <button id="new-dog-btn" class="btn custom-btn">
+                                <i class="bi bi-arrow-clockwise"></i> Get New Dog
+                            </button>
+                        </div>
+    
+                        <div class="menu-block">
+                            <div class="d-flex flex-column">
+                                <h6 class="text-center mb-4 text-white">Click this button and get a new photo of a puppy from a large and extensive range of different photos collected from the Internet.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Columna derecha - Cats -->
+                <div class="col-lg-6 col-12 d-flex">
+                    <div class="menu-block-wrap w-100">
+                        <div class="text-center mb-4 pb-lg-2">
+                            <h4 class="text-white">Do you like cats?</h4>
+                        </div>
+    
+                        <!-- Contenedor de la imagen del gato -->
+                        <div class="text-center mb-3">
+                            <img id="cat-image" src="" alt="Random Cat" class="img-fluid rounded" style="max-height: 300px; width: auto;">
+                        </div>
+    
+                        <!-- Botón para nueva imagen de gato -->
+                        <div class="text-center mb-4">
+                            <button id="new-cat-btn" class="btn custom-btn">
+                                <i class="bi bi-arrow-clockwise"></i> Get New Cat
+                            </button>
+                        </div>
+    
+                        <div class="menu-block my-4">
+                            <div class="d-flex flex-column">
+                                <h6 class="text-center mb-4 text-white">Click this button and get a new photo of a kitten from a large and extensive range of different photos collected from the Internet.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-8 col-12 mt-4">
+                                <p class="copyright-text mb-0">Copyright © Barista Cafe 2048 
+                                    - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                                <p> Edited by: Sebastian Woo</a></p>
+                            </div>
+                    </div>
+                </footer>
+            </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script type="module" src="js/mapa.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/vegas.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/11.3.1/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/11.3.1/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore-compat.js"></script>
+        <script src="js/auth.js"></script>
+
+        <script>
+            ((g) => {
+              var h,
+                a,
+                k,
+                p = "The Google Maps JavaScript API",
+                c = "google",
+                l = "importLibrary",
+                q = "__ib__",
+                m = document,
+                b = window;
+              b = b[c] || (b[c] = {});
+              var d = b.maps || (b.maps = {}),
+                r = new Set(),
+                e = new URLSearchParams(),
+                u = () =>
+                  h ||
+                  (h = new Promise(async (f, n) => {
+                    await (a = m.createElement("script"));
+                    e.set("libraries", [...r] + "");
+                    for (k in g)
+                      e.set(
+                        k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                        g[k]
+                      );
+                    e.set("callback", c + ".maps." + q);
+                    a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                    d[q] = f;
+                    a.onerror = () => (h = n(Error(p + " could not load.")));
+                    a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                    m.head.append(a);
+                  }));
+              d[l]
+                ? console.warn(p + " only loads once. Ignoring:", g)
+                : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+            })({ key: "AIzaSyD5qgBi2u00gnpbGPzKLbPGS9UtWpUWE9c", v: "weekly" });
+          </script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Función para obtener imagen de perro
+                async function getDogImage() {
+                    try {
+                        const response = await fetch('https://dog.ceo/api/breeds/image/random');
+                        const data = await response.json();
+                        document.getElementById('dog-image').src = data.message;
+                    } catch (error) {
+                        console.error('Error fetching dog image:', error);
+                    }
+                }
+            
+                // Función para obtener imagen de gato
+                async function getCatImage() {
+                    try {
+                        const response = await fetch('https://api.thecatapi.com/v1/images/search');
+                        const data = await response.json();
+                        document.getElementById('cat-image').src = data[0].url;
+                    } catch (error) {
+                        console.error('Error fetching cat image:', error);
+                    }
+                }
+            
+                // Event listeners para los botones
+                document.getElementById('new-dog-btn').addEventListener('click', getDogImage);
+                document.getElementById('new-cat-btn').addEventListener('click', getCatImage);
+            
+                // Cargar imágenes iniciales
+                getDogImage();
+                getCatImage();
+            });
+            </script>
+
+    </body>
+</html>
